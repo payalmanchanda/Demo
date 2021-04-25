@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="test" thread-count="2" parallel="tests">
+
+    <test enabled="true" name="db Test" preserve-order="true">
+        <parameter name="platform" value="api"/>
+        <parameter name="browser" value=""/>
+        <classes>
+            <class name="com.demo.test.Tests">
+                <methods>
+                    <include name="test_ExistenceOfButton"/>
+                    <include name="test_SearchEmptyisForbidden"/>
+                    <include name="test_AtleastOneIslandReturn"/>
+                    <include name="test_NoResultsFoundForAQuery"/>
+                    <include name="test_GettingSingleResultForQuery"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
